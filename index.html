@@ -7,6 +7,10 @@
             *{
                 box-sizing: border-box;
             }
+            body{
+                margin: 0;
+                overflow-x: hidden;
+            }
             html{
                 font-family: Georgia, serif;
             }
@@ -35,6 +39,8 @@
                 position: fixed;
                 right: 0;
                 top: 0;
+                background-color: #f1f1f1;
+                width: 100%;
             }
             .search{
                 position: fixed;
@@ -42,9 +48,39 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
-            .container{
+            .search input{
+                display: block;
+            }
+            .search .se1{
+                width: 20rem;
+                border-radius: 20px;
+                border: 1px solid #f1f1f1;
+            }
+            .search .se1:focus{
+                
+            }
+            .search .se2{
+                position: relative;
+                top: 20px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 0.5rem;
+                
+            }
+            .flex-container{
                 display: flex;
-                flex-flow: row wrap;
+                flex-wrap: wrap;
+            }
+            .flex-container div {
+                flex: 25%;
+                max-width: 25%;
+                margin: 0;
+                padding: 0;
+            }
+
+            div img{
+                padding: 2px 2px;
+                margin: 0;
             }
         </style>
     </head>
@@ -57,17 +93,35 @@
         </div>
         <div class="search">
             <form class="form" action="https://www.google.com/search">
-                <input type="text" name="q">
-                <input type="submit" value="Google Search">
+                <input class="se1" type="text" name="q">
+                <input class="se2" type="submit" value="Google Search">
             </form>
         </div>
-        <div class="container">
-            <div class="column">
-
+        <div class="flex-container">
+            <div >
+                <img src="https://picsum.photos/id/1050/200/240" alt="picsum" style="width:100% ;">
+                <img src="https://picsum.photos/id/1049/200/180" alt="picsum" style="width:100% ;">
+                <img src="https://picsum.photos/id/1040/200/260" alt="picsum" style="width:100% ;">
+                <img src="https://picsum.photos/id/1016/200/220" alt="picsum" style="width:100% ;">
             </div>
-            <div class="column"></div>
-            <div class="column"></div>
-            <div class="column"></div>
+            <div>
+                <img src="https://picsum.photos/id/1036/200/200" alt="picsum" style="width:100% ;">
+                <img src="https://picsum.photos/id/1039/200/280" alt="picsum" style="width:100% ;">
+                <img src="https://picsum.photos/id/1037/200/300" alt="picsum" style="width:100% ;">
+                <img src="https://picsum.photos/id/1018/200/120" alt="picsum" style="width:100% ;">
+            </div>
+            <div>
+                <img src="https://picsum.photos/id/1029/200/220" alt="picsum" style="width:100% ;">
+                <img src="https://picsum.photos/id/1021/200/180" alt="picsum" style="width:100% ;">
+                <img src="https://picsum.photos/id/1019/200/340" alt="picsum" style="width:100% ;">
+                <img src="https://picsum.photos/id/1040/200/160" alt="picsum" style="width:100% ;">
+            </div>
+            <div>
+                <img src="https://picsum.photos/id/1018/200/110" alt="picsum" style="width:100% ;">
+                <img src="https://picsum.photos/id/1016/200/300" alt="picsum" style="width:100% ;">
+                <img src="https://picsum.photos/id/1015/200/290" alt="picsum" style="width:100% ;">
+                <img src="https://picsum.photos/id/1050/200/200" alt="picsum" style="width:100% ;">
+            </div>
         </div>
     </body>
 </html>

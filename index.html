@@ -27,7 +27,8 @@
                 text-decoration: none;
                 display: block;
                 color: rgba(60, 60, 60, 0.9);
-                margin:5px;
+                margin:15px;
+                font-size: 12px;
             }
             .navbar::after{
                 content: "";
@@ -39,7 +40,6 @@
                 position: fixed;
                 right: 0;
                 top: 0;
-                background-color: #f1f1f1;
                 width: 100%;
             }
             .search{
@@ -57,31 +57,45 @@
                 border: 1px solid #f1f1f1;
             }
             .search .se1:focus{
-                
+                border: 1px solid hsl(0, 6%, 20%);
             }
-            .search .se2{
+            
+            div.se > input{
+                float: left;
+                font-size: 8px;
+            } 
+            div.se{
                 position: relative;
-                top: 20px;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                font-size: 0.5rem;
-                
+                top: 15px;
+                transform: translate(28%);
             }
-            .flex-container{
-                display: flex;
-                flex-wrap: wrap;
+            .se2 {
+                position: relative;
+                right: 4px;
             }
-            .flex-container div {
-                flex: 25%;
-                max-width: 25%;
-                margin: 0;
-                padding: 0;
+            .se3{
+                position: relative;
+                right: -4px;
             }
-
-            div img{
-                padding: 2px 2px;
-                margin: 0;
+            .se2, .se3{
+                border: none;
+                background-color: #f1f1f1;
+                padding: 4px 6px;
+                font-family: Arial, "sans-serif";
+                color: hsl(0, 6%, 20%);
             }
+            .se2:hover, .se3:hover {
+                cursor: pointer;
+            }
+            span{
+                display: inline-block;
+                font-size: 60px;
+                font-family: Arial, "sans-serif";
+            }
+            .logo {
+                transform: translate(18%, -10px);
+            }
+            
         </style>
     </head>
     <body>
@@ -93,35 +107,21 @@
         </div>
         <div class="search">
             <form class="form" action="https://www.google.com/search">
+                <div class="logo">
+                    <span style="color: blue;">G</span>
+                    <span style="color: red;">o</span>
+                    <span style="color: yellow;">o</span>
+                    <span style="color: blue;">g</span>
+                    <span style="color: green;">l</span>
+                    <span style="color: red;">e</span>
+                </div>
                 <input class="se1" type="text" name="q">
-                <input class="se2" type="submit" value="Google Search">
+                <div class="se">
+                    <input class="se2" type="submit" value="Google Search">
+                    <input class="se3" type="submit" name="btnI" value="I'm Feeling Lucky">
+                </div>
             </form>
         </div>
-        <div class="flex-container">
-            <div >
-                <img src="https://picsum.photos/id/1050/200/240" alt="picsum" style="width:100% ;">
-                <img src="https://picsum.photos/id/1049/200/180" alt="picsum" style="width:100% ;">
-                <img src="https://picsum.photos/id/1040/200/260" alt="picsum" style="width:100% ;">
-                <img src="https://picsum.photos/id/1016/200/220" alt="picsum" style="width:100% ;">
-            </div>
-            <div>
-                <img src="https://picsum.photos/id/1036/200/200" alt="picsum" style="width:100% ;">
-                <img src="https://picsum.photos/id/1039/200/280" alt="picsum" style="width:100% ;">
-                <img src="https://picsum.photos/id/1037/200/300" alt="picsum" style="width:100% ;">
-                <img src="https://picsum.photos/id/1018/200/120" alt="picsum" style="width:100% ;">
-            </div>
-            <div>
-                <img src="https://picsum.photos/id/1029/200/220" alt="picsum" style="width:100% ;">
-                <img src="https://picsum.photos/id/1021/200/180" alt="picsum" style="width:100% ;">
-                <img src="https://picsum.photos/id/1019/200/340" alt="picsum" style="width:100% ;">
-                <img src="https://picsum.photos/id/1040/200/160" alt="picsum" style="width:100% ;">
-            </div>
-            <div>
-                <img src="https://picsum.photos/id/1018/200/110" alt="picsum" style="width:100% ;">
-                <img src="https://picsum.photos/id/1016/200/300" alt="picsum" style="width:100% ;">
-                <img src="https://picsum.photos/id/1015/200/290" alt="picsum" style="width:100% ;">
-                <img src="https://picsum.photos/id/1050/200/200" alt="picsum" style="width:100% ;">
-            </div>
-        </div>
+        
     </body>
 </html>

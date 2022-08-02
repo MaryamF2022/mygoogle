@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            html{
+                font-family: Georgia, serif;
+            }
+            ul.navcontent {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+            }
+            .navcontent li{
+                float: right;
+            }
+            .navcontent li a {
+                text-decoration: none;
+                display: block;
+                color: rgba(60, 60, 60, 0.9);
+                margin:5px;
+            }
+            .navbar::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+            .navbar{
+                margin-bottom: 20px;
+                position: fixed;
+                right: 0;
+                top: 0;
+            }
+            .search{
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .container{
+                display: flex;
+                flex-flow: row wrap;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <ul class="navcontent">
+                <li><a href="">Image Search</a></li>
+                <li><a href="">Advanced Search</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <form class="form" action="https://www.google.com/search">
+                <input type="text" name="q">
+                <input type="submit" value="Google Search">
+            </form>
+        </div>
+        <div class="container">
+            <div class="column">
+
+            </div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+        </div>
+    </body>
+</html>

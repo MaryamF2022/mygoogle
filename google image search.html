@@ -3,6 +3,15 @@
     <head>
         <title>Google Images</title>
         <style>
+            .google img{
+                max-width: 40px;
+                max-height: 32px;
+            }
+            .google ul{
+                list-style-type: none;
+                padding: 12px;
+                margin: 0;
+            }
             .search{
                 position: fixed;
                 top: 50%;
@@ -20,28 +29,61 @@
                 background-size: 20px 15px;
                 background-position: center right;
                 background-repeat: no-repeat;
-                padding: 2px 6px;
+                padding: 4px 6px;
             }
             form{
                 position: relative;
             }
             .logo{
                 position: absolute;
-                transform: translate(38%);
+                transform: translate(30%, -20%);
                 top: -67px;
+            }
+            #sub{
+                position: relative;
+                transform: translate(120%, 15px);
+                border-radius: 3%;
+                border: none;
+                background-color: hsl(210, 100%, 50%);
+                color: white;
+            }
+            .under{
+                position: relative;
+                right: 20%;
+                font-size: 0.8rem;
+                font-family: Tahoma, Verdana, sans-serif;
+                color: hsl(210, 100%, 50%);
             }
         </style>
     </head>
     <body>
+        <div class="google">
+            <ul>
+                <li>
+                    <a href="./index.html">
+                        <img src="./googlelogo.png" alt="logo">
+                    </a>
+                </li>
+            </ul>
+        </div>
         <div class="search">
-            <form class="form" action="https://images.google.com/">
+            <form class="form" action="https://www.google.com/search">
                 <div class="logo">
-                    <img src="./googleimagelogo.png" alt="google"  style="height:62px; width: 182px;;">
+                    <img src="./googleimagelogo.png" alt="google"  style="height:62px; width: 182px;">
+                    <span class="under">Images</span>
                 </div>
                 <input class="se1" type="text" name="q">
-                <button type="submit" jsname="Tg7LZd">
-                    Search Image
-                </button>
+                <input id="sub" type="submit" value="Image Search">
+                <input type="hidden" name="tbm" value="isch">
+                <input type="hidden" name="sxsrf" value="ALiCzsbDO_gYx9j5ZeglVqBx8pq3KSbw1Q%3A1659529552281">
+                <input type="hidden" name="source" value="hp">
+                <input type="hidden" name="biw" value="1536">
+                <input type="hidden" name="bih" value="722">
+                <input type="hidden" name="ei" value="UGnqYtuXDq28xc8Pv-Kp8AQ">
+                <input type="hidden" name="iflsig" value="AJiK0e8AAAAAYup3YGnn0zjuT25KO2DhXwAD4gVOndj_">
+                <input type="hidden" name="oq">
+                <input type="hidden" name="gs_lcp" value="CgNpbWcQARgBMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnUABYAGDSDGgBcAB4AIABAIgBAJIBAJgBAKoBC2d3cy13aXotaW1nsAEK">
+                <input type="hidden" name="sclient" value="img">
             </form>
         </div>
     </body>

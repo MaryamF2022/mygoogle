@@ -3,6 +3,9 @@
     <head>
         <title>Search</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <style>
             *{
                 box-sizing: border-box;
@@ -28,7 +31,7 @@
                 display: block;
                 color: rgba(60, 60, 60, 0.9);
                 margin:15px;
-                font-size: 12px;
+                font-size: 8px;
             }
             .navbar::after{
                 content: "";
@@ -87,13 +90,8 @@
             .se2:hover, .se3:hover {
                 cursor: pointer;
             }
-            span{
-                display: inline-block;
-                font-size: 60px;
-                font-family: Arial, "sans-serif";
-            }
             .logo {
-                transform: translate(18%, -10px);
+                transform: translate(20%, -10px);
             }
             
         </style>
@@ -108,12 +106,7 @@
         <div class="search">
             <form class="form" action="https://www.google.com/search">
                 <div class="logo">
-                    <span style="color: blue;">G</span>
-                    <span style="color: red;">o</span>
-                    <span style="color: yellow;">o</span>
-                    <span style="color: blue;">g</span>
-                    <span style="color: green;">l</span>
-                    <span style="color: red;">e</span>
+                    <img src="./googlelogo.png" alt="google"  style="height:62px; width: 182px;;">
                 </div>
                 <input class="se1" type="text" name="q">
                 <div class="se">

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{box-sizing: border-box;}
+            html{
+                font-family:Verdana, Geneva, Tahoma, sans-serif ;
+            }
+            body{
+                margin: 0;
+            }
+            .google img{
+                max-width: 40px;
+                max-height: 32px;
+            }
+            .google ul{
+                list-style-type: none;
+                padding: 12px;
+                margin: 0;
+            }
+            .advanced{
+                margin: 25px;
+                font-family: inherit;
+                font-size: 11px;
+                color: rgb(220, 35, 35);
+            }
+            input{
+                border: 1px solid #d9d9d9;
+                border-top: 1px solid #c0c0c0;
+                border-radius: 1px;
+                font-size: 0.5rem;
+                height: 20px;
+            }
+            input:focus:not(input[type=submit]){
+                box-shadow: 2px 3px #c0c0c0 inset;
+                border: 1px solid #d9d9d9;
+                border-top: 1px solid #c0c0c0;
+            }
+            input[type=submit]:hover{
+                cursor: pointer;
+            }
+            .dd{
+                border-bottom: 1px solid #f1f1f1;
+
+            }
+            .pagea{
+                margin: 40px;
+            }
+            table{
+                font-family: inherit;
+                font-size: 0.5rem;
+                border-collapse: collapse;
+            }
+            .head{
+                width: 5%;
+            }
+            .one{
+                width: 3%;
+            }
+            .two{
+                width: 16%;
+            }
+            .xf{
+                float: left;
+            }
+            .three{
+                width: 60%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="google">
+            <ul>
+                <li>
+                    <a href="./index.html">
+                        <img src="./googlelogo.png" alt="logo">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="advanced">
+            <span>Advanced Search</span>
+        </div>
+        <div class="dd"></div>
+        <div class="pagea" style="position: relative;">
+            <form action="https://www.google.com/search" name="f">
+                <table>
+                    <thead>
+                        <tr class="head">
+                            <td style="font-size: 0.8rem;" class="one">Find pages with...</td>
+                            <td class="two"></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label for="xa">all these words:</label>
+                            </td>
+                            <td>
+                                <input class="three" type="text" id="xa" name="as_q">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="xb">this exact word or phrase:</label>
+                            </td>
+                            <td>
+                                <input class="three" type="text" id="xb" name="as_epq">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="xc">any of these words:</label>
+                            </td>
+                            <td>
+                                <input class="three" type="text" id="xc" name="as_oq">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="xd">none of these words:</label>
+                            </td>
+                            <td>
+                                <input class="three" type="text" id="xd" name="as_eq">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="width: 100%;">
+                                </div>
+                            </td>
+                            <td>
+                                <input type="submit" value="Advance Search" style="height:20px ; background-color: hsl(210, 100%, 50%); color:white; margin: 12px;position: absolute; right: 210px;bottom: -40px;">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input type="hidden" name="as_nlo">
+                <input type="hidden" name="as_nhi">
+                <input type="hidden" name="lr">
+                <input type="hidden" name="cr">
+                <input type="hidden" name="as_qdr" value="all">
+                <input type="hidden" name="as_sitesearch">
+                <input type="hidden" name="as_occt" value="any">
+                <input type="hidden" name="safe" value="active">
+                <input type="hidden" name="as_filetype">
+                <input type="hidden" name="tbs">
+            </form>
+        </div>
+    </body>
+</html>
